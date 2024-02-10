@@ -1,0 +1,143 @@
+<!-- HTML Slider
+Code modified from https://github.com/DCODESHOW/How-To-Change-The-Images-Based-On-The-Range-Slider
+Author: Klaudia Bak -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> ENTER TITLE </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<section class = "header">
+    <h1> ENTER SUBHEADING 1 </h1>
+    <p> ENTER SUBHEADING 2 </p>
+</section>
+
+<body>
+    <div class="imagechange">
+        <!-- enter file name (must be within same folder as HTML code) for base image -->
+        <img src="images/Outputs/HSS_Outputs Page 001.jpg" id="imgchange">  
+    </div>
+    <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="1" class="slider-range" id="myRange">
+        <p style="color:white">Value : <span id="rangevalue"></span></p>
+    </div>
+
+
+    <script>
+        let rangevalue = document.getElementById("myRange");
+        let setvalue = document.getElementById("rangevalue");
+        let imgchangevalue = document.getElementById("imgchange")
+            //setvalue.innerHTML = rangevalue.value;
+            //console.log(rangevalue.value)
+
+        //Now will use oninput event.
+        
+        rangevalue.oninput = function() {
+            let getvalue = rangevalue.value;
+            setvalue.innerHTML = this.value;
+            // the following lines set slider values (out of 100) for when each image will appear
+            // update getvalue to reflect # of images, and update file name (same restrictions as above)
+            if (getvalue > 0 && getvalue < 3) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 001.jpg")
+            } else if (getvalue >= 3 && getvalue <= 6) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 002.jpg")
+            } else if (getvalue >= 6 && getvalue <= 8) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 003.jpg")
+            } else if (getvalue >= 8 && getvalue <= 10) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 004.jpg")
+            } else if (getvalue >= 10 && getvalue <= 12) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 005.jpg")
+            } else if (getvalue >= 12 && getvalue <= 14) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 006.jpg")
+            } else if (getvalue >= 14 && getvalue <= 16) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 007.jpg")
+            } else if (getvalue >= 16 && getvalue <= 18) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 008.jpg")
+            } else if (getvalue >= 18 && getvalue <= 20) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 009.jpg")
+            } else if (getvalue >= 20 && getvalue <= 22) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 010.jpg")
+            } else if (getvalue >= 22 && getvalue <= 24) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 011.jpg")
+            } else if (getvalue >= 24 && getvalue <= 26) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 012.jpg")
+            } else if (getvalue >= 26 && getvalue <= 28) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 013.jpg")
+            } else if (getvalue >= 28 && getvalue <= 30) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 014.jpg")
+            } else if (getvalue >= 30 && getvalue <= 32) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 015.jpg")
+            } else if (getvalue >= 32 && getvalue <= 34) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 016.jpg")
+            } else if (getvalue >= 34 && getvalue <= 36) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 017.jpg")
+            } else if (getvalue >= 36 && getvalue <= 38) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 018.jpg")
+            } else if (getvalue >= 38 && getvalue <= 40) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 019.jpg")
+            } else if (getvalue >= 40 && getvalue <= 42) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 020.jpg")
+            } else if (getvalue >= 42 && getvalue <= 44) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 021.jpg")
+            } else if (getvalue >= 44 && getvalue <= 46) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 022.jpg")
+            } else if (getvalue >= 46 && getvalue <= 48) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 023.jpg")
+            } else if (getvalue >= 48 && getvalue <= 50) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 024.jpg")
+            } else if (getvalue >= 50 && getvalue <= 52) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 025.jpg") 
+            } else if (getvalue >= 52 && getvalue <= 54) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 026.jpg") 
+            } else if (getvalue >= 54 && getvalue <= 56) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 027.jpg") 
+            } else if (getvalue >= 56 && getvalue <= 58) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 028.jpg") 
+            } else if (getvalue >= 58 && getvalue <= 60) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 029.jpg") 
+            } else if (getvalue >= 60 && getvalue <= 62) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 030.jpg") 
+            } else if (getvalue >= 62 && getvalue <= 64) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 031.jpg") 
+            } else if (getvalue >= 64 && getvalue <= 66) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 032.jpg") 
+            } else if (getvalue >= 66 && getvalue <= 68) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 033.jpg") 
+            } else if (getvalue >= 68 && getvalue <= 70) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 034.jpg") 
+            } else if (getvalue >= 70 && getvalue <= 72) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 035.jpg") 
+            } else if (getvalue >= 72 && getvalue <= 74) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 036.jpg") 
+            } else if (getvalue >= 74 && getvalue <= 76) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 037.jpg") 
+            } else if (getvalue >= 76 && getvalue <= 78) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 038.jpg") 
+            } else if (getvalue >= 78 && getvalue <= 80) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 039.jpg") 
+            } else if (getvalue >= 80 && getvalue <= 82) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 040.jpg") 
+            } else if (getvalue >= 82 && getvalue <= 84) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 041.jpg") 
+            } else if (getvalue >= 84 && getvalue <= 86) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 042.jpg") 
+            } else if (getvalue >= 86 && getvalue <= 89) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 043.jpg") 
+            } else if (getvalue >= 89 && getvalue <= 92) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 044.jpg") 
+            } else if (getvalue >= 92 && getvalue <= 95) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 045.jpg") 
+            } else if (getvalue >= 95 && getvalue <= 98) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 046.jpg") 
+            } else if (getvalue >= 98) {
+                imgchangevalue.setAttribute("src", "images/Outputs/HSS_Outputs Page 047.jpg") 
+            }
+        }
+    </script>
+
+</body>
+
+</html>
